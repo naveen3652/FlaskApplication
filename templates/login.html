@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+    <form method="POST" action="">
+        <legend>Login</legend>
+        {{ form.hidden_tag() }}
+       
+        <div class="email">
+            {{ form.email.label }} 
+            {{ form.email(size=32) }}
+        </div>
+        <div class="password">
+            {{ form.password.label }} 
+            {{ form.password(size=32) }}
+        </div>
+        
+        <div class="submit-btn">
+            {{ form.submit() }}
+        </div>
+    </form>
+    <small class="lg-sml" >Have no account <a href="{{url_for('sign_up')}}">sign up</a></small>
+{% endblock %}  
+  

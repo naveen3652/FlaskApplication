@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'styles.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header>
+        <h1>Progress tracker</h1>
+        <p>This page is dedicated to keep track of your study progress. Learn faster. Learn better.</p>
+        <small>Learn quickly dude !</small>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <small>Created by Naveen P</small>
+        <p>For projects contact :</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/naveen-p-36708526a/"><img src="{{url_for('static',filename='linkedin.jpg')}}" alt="linkedin img" height="30" ></a></li>
+            <li><a href="mailto:naveennaveen55597@gmail.com"> <img src="{{url_for('static',filename='mail.jpg')}}" alt="mail icon" height="30"></a> </li>
+        </ul>
+    </footer>
+</body>
+</html>

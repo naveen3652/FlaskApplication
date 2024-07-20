@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="index-main">
+        <div class="sign-up-section">
+            <p class="sign-up-text">Don't have an account sign up quickly</p>
+            <a href="{{url_for('sign_up')}}" class="sign-up-link">sign-up</a>
+        </div>
+        <div class="login-section">
+            <p class="login-text">Already have a account. Learn your course faster!</p>
+            <a href="{{url_for('Login')}}" class="login-link">Login</a>
+        </div>
+    </div>
+{% endblock %}
